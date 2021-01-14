@@ -718,6 +718,14 @@ section.work .wrapper .portfolio .portfolio_wrapper .item button {
     }
     
 }
+@media (max-width: 375px) {
+    section.work .wrapper .portfolio .portfolio_wrapper .item button {
+        margin-bottom: 3rem;
+    }
+    section.work .wrapper .portfolio .portfolio_wrapper .item {
+        grid-template-columns: 1fr;
+    }
+}
 @media (max-width: 320px) {
     section.work .wrapper .portfolio .portfolio_wrapper .item button {
         margin-bottom: 3rem;
