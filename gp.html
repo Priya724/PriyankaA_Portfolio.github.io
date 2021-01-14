@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <style>
+
+    .gallery {
+    margin: 10px 50px;
+    }
+
+   .gallery img {
+    transition: 1s;
+    padding: 15px;
+    width: 300px;
+    }
+
+    .gallery img:hover {
+    filter: grayscale(100%);
+    transform: scale(1.1);
+    }
+
+     /*Media Queries*/
+
+    @media (max-width: 1280px) {
+     .gallery {
+         max-width: 90%;
+        }
+    }
+
+    @media (max-width: 1024px) {
+    .gallery{
+        max-width: 50%;
+    }
+    }
+
+@media (max-width: 970px) {
+    .gallery{
+        max-width: 50%;
+    }
+}
+
+@media (max-width: 768px) {
+    .gallery{
+        max-width: 35%;
+    }
+}
+
+@media (max-width: 576px) {
+    .gallery{
+        max-width: 35%;
+    }
+}
+
+    </style>
+
+    <link rel="stylesheet" href="./css/lightbox.min.css">
+    <script src="./js/lightbox-plus-jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+</head>
+<body>
+    <div class="gallery">
+        <a href="images/gp images/Picture9b.png" data-lightbox="gallery" data-title="Army Institute and Management System.."><img src="images/gp images/Picture9.png"></a>
+        <a href="images/gp images/Picture10b.png" data-lightbox="gallery" data-title="Army Institute and Management System.."><img src="images/gp images/Picture10.png"></a>
+        <a href="images/gp images/Picture11b.png" data-lightbox="gallery" data-title="Army Institute and Management System..""><img src="images/gp images/Picture12.png"></a>
+        <a href="images/gp images/Picture13b.png" data-lightbox="gallery" data-title="Army Institute and Management System.."><img src="images/gp images/Picture13.png"></a>
+        <a href="images/gp images/Picture14b.png" data-lightbox="gallery" data-title="Army Institute and Management System.."><img src="images/gp images/Picture14.png"></a>
+        <a href="images/gp images/Picture15b.png" data-lightbox="gallery" data-title="Army Institute and Management System.."><img src="images/gp images/Picture15.png"></a>
+        <a href="images/gp images/Picture16b.png" data-lightbox="gallery" data-title="Army Institute and Management System.."><img src="images/gp images/Picture16.png"></a>
+        <a href="images/gp images/Picture17b.png" data-lightbox="gallery" data-title="Army Institute and Management System.."><img src="images/gp images/Picture17.png"></a>
+        <a href="images/gp images/Picture18b.png" data-lightbox="gallery" data-title="Army Institute and Management System.."><img src="images/gp images/Picture18.png"></a>
+    </div>
+</body>
+</html>
