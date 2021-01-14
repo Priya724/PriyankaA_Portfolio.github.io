@@ -444,10 +444,11 @@ section.work .wrapper .portfolio .portfolio_wrapper {
 
 
 section.work .wrapper .portfolio .portfolio_wrapper .item {
-    flex: 0 0 33.333333%;
-    max-width: 33.333333%;
+    /*flex: 0 0 33.333333%;
+    max-width: 33.333333%;*/
     grid-template-columns: repeat(3, 1fr);
-    justify-content: space-evenly;   
+    justify-content: space-between;
+
 }
 
 section.work .wrapper .portfolio .portfolio_wrapper .item h2 {
@@ -464,6 +465,17 @@ section.work .wrapper .portfolio .portfolio_wrapper .item p {
     line-height: 1.6;
     letter-spacing: 0.1px;
     margin-bottom: 1rem;
+}
+
+section.work .wrapper .portfolio .portfolio_wrapper .item button {
+    background: rgba(77, 121, 246, 0.1);
+    color: var(--info);
+    padding: 4px 8px;
+    font-size: 12px;
+    border: none;
+    line-height: 24px;
+    outline: none;
+    cursor: pointer;
 }
 
 /*section.work .wrapper .portfolio .portfolio_wrapper a img {
@@ -576,6 +588,16 @@ section.work .wrapper .portfolio .portfolio_wrapper .item p {
 
  /*Media Queries*/
 
+ @media (max-width: 2560px) {
+    section.work .wrapper .portfolio .portfolio_wrapper .item button {
+        margin-bottom: 3rem;
+ }
+
+ @media (max-width: 1440px) {
+    section.work .wrapper .portfolio .portfolio_wrapper .item button {
+        margin-bottom: 3rem;
+ }
+
  @media (max-width: 1280px) {
      .container {
          max-width: 90%;
@@ -603,6 +625,9 @@ section.work .wrapper .portfolio .portfolio_wrapper .item p {
     section.partner {
         margin-top: 4rem;
     }
+    section.work .wrapper .portfolio .portfolio_wrapper .item button {
+        margin-bottom: 3rem;
+    }
 }
 
 @media (max-width: 970px) {
@@ -621,6 +646,9 @@ section.work .wrapper .portfolio .portfolio_wrapper .item p {
     section.contact .wrapper .right .form_group.textarea_wrapper {
         display: block;
     }
+    section.work .wrapper .portfolio .portfolio_wrapper .item button {
+        margin-bottom: 3rem;
+    }
 }
 
 @media (max-width: 768px) {
@@ -633,12 +661,12 @@ section.work .wrapper .portfolio .portfolio_wrapper .item p {
     section.contact .wrapper{
         display: block;
     }
-    section.contact .wrapper .left {
+    /*section.contact .wrapper .left {
         display: flex;
         align-items: center;
         flex-wrap: wrap;
         justify-content: space-between;
-    }
+    }*/
     section.counter_section {
         display: flex;
         justify-content: space-between;
@@ -646,6 +674,15 @@ section.work .wrapper .portfolio .portfolio_wrapper .item p {
     }
     section.counter_section > div {
         margin-bottom: 2rem;
+    }
+    section.work .wrapper .portfolio .portfolio_wrapper .item {
+        grid-template-columns: 1fr;
+    }
+    section.work .wrapper .portfolio .portfolio_wrapper .item ul {
+        margin-bottom: 8rem;
+    }
+    section.work .wrapper .portfolio .portfolio_wrapper .item button {
+        margin-bottom: 3rem;
     }
 }
 
@@ -668,7 +705,14 @@ section.work .wrapper .portfolio .portfolio_wrapper .item p {
     section.work .wrapper .portfolio .portfolio_wrapper {
         margin-top: 0;
     }
+    section.work .wrapper .portfolio .portfolio_wrapper .item {
+        grid-template-columns: 1fr;
+    }
+    section.work .wrapper .portfolio .portfolio_wrapper .item button {
+        margin-bottom: 3rem;
+    }
     section.contact .wrapper .right .form_group {
         grid-template-columns: 1fr;
     }
+    
 }
